@@ -13,6 +13,12 @@ export default function Home() {
           <GameMode />
         </div>
       </div>
+      <div className="flex flex-col w-3/4 place-self-center gap-4">
+        <hr />
+        <h2 className="inline bg-blue-200 p-2 rounded-md">
+          Note: Don't Refresh the Page as it will Reset the Game.{" "}
+        </h2>
+      </div>
     </>
   );
 }

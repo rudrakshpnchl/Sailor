@@ -17,9 +17,8 @@ export default function GameMode() {
     Hard: hardWords,
   };
 
-  // ✅ Show Game after selecting mode
   if (selectedMode) {
-    return <Game gamemode={modes[selectedMode]} />;
+    return <div className="border-2 p-4 rounded-xl"><Game gamemode={modes[selectedMode]} /></div>
   }
 
   return (
