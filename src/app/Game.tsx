@@ -34,9 +34,9 @@ export default function Game({ gamemode }: { gamemode: GameMode[] }) {
       setIncorrectGuess(1);
     } else if (!isGuessed) {
       alert("Guess the Word to go to the next level.");
-    }
-    else {
-        alert('Congratulations, You  have Ended the game.!!')
+    } else {
+      alert("Congratulations, You  have Finished the game.!!");
+      location.reload();
     }
   }
 
@@ -49,9 +49,7 @@ export default function Game({ gamemode }: { gamemode: GameMode[] }) {
           </h2>
           <p>Congrats!! You Guessed the Word Correctly!!</p>
         </div>
-        <div className="mb-3">
-          Length of Word: {gamemode[game].word.length}
-        </div>
+        <div className="mb-3">Length of Word: {gamemode[game].word.length}</div>
         {/* hints */}
         <hr />
         <div className="mt-3">

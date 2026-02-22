@@ -23,6 +23,7 @@ export default function Home() {
         <div className="px-6 py-4">
           <h2 className=" font-semibold text-2xl mb-2">Updates</h2>
           <ul className="list-disc">
+            <li>This Week's Theme: Random</li>
             <li>New Lists Updates every Week.</li>
             <li>
               To Contribute to Lists:{" "}
