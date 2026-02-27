@@ -18,12 +18,16 @@ export default function GameMode() {
   };
 
   if (selectedMode) {
-    return <div className="border-2 p-4 rounded-xl"><Game gamemode={modes[selectedMode]} /></div>
+    return (
+      <div className="border-2 p-4 rounded-xl">
+        <Game gamemode={modes[selectedMode]} />
+      </div>
+    );
   }
 
   return (
     <div className="border-2 p-6 rounded-md flex flex-col gap-4">
-      <h1 className="font-semibold text-2xl">
+      <h1 className="font-semibold text-lg md:text-2xl">
         Choose a Game Mode On the Basis of Difficulty Level
       </h1>
       <hr />
