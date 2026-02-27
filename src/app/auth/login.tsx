@@ -21,7 +21,7 @@ export default function Login() {
             </div>
             <button
               type="submit"
-              className="bg-gray-300 p-2 rounded-md flex place-self-center border-2 w-1/4 justify-center"
+              className="bg-gray-300 p-2 rounded-md flex place-self-center border-2 w-2/5 justify-center"
             >
               Login
             </button>

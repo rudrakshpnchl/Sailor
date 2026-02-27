@@ -2,7 +2,7 @@
 import GameMode from "./gameMode";
 import { useState } from "react";
 import Login from "./auth/login";
-import Signup from "./auth/signup";
+import Register from "./auth/signup";
 
 export default function Home() {
   const [clickedLogin, isClickedLogin] = useState(false);
@@ -10,9 +10,11 @@ export default function Home() {
 
   function login() {
     isClickedLogin(true);
+    isClickedSignup(false);
   }
   function signup() {
     isClickedSignup(true);
+    isClickedLogin(false);
   }
 
   return (
@@ -37,7 +39,7 @@ export default function Home() {
 
       <div className="p-6 flex flex-col gap-4 place-self-center">
         <div>
-          {clickedLogin ? <Login /> : clickedSignup ? <Signup /> : <GameMode />}
+          {clickedLogin ? <Login /> : clickedSignup ? <Register /> : <GameMode />}
         </div>
       </div>
       <div className="">
